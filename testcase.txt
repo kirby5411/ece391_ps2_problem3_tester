@@ -1,0 +1,9 @@
+testcase.txt_file_format:
+numthread
+segments_(twenty_int_seperated_by_space)
+seg_used
+ONLY_MODIFY_THE_VALUES_BELOW_DASHED_LINE!
+-------------------------------------------------------------
+8
+0 4 7 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+3
