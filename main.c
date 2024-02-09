@@ -121,12 +121,7 @@ int main() {
     }
 
     // Initialize the lab lock
-    spinlock_t* lock = malloc(sizeof(spinlock_t));
-    spinlock_init_ece391(lock);
-    lab_lock.zombie_count = 0;
-    lab_lock.scientist_count = 0;
-    lab_lock.scientist_in_queue = 0;
-    lab_lock.spinlock = lock;
+
     // Create threads for scientists and zombies
     for(k = 0 ; k < seg_used ; ++k){
         for(i = segments[k] ; i < segments[k+1]; ++i){
@@ -144,8 +139,7 @@ int main() {
     }
 
     // Cleanup lab lock
-    spinlock_destroy_ece391(lock);
-    free(lock);
+
 
     return 0;
 }
